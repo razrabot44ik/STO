@@ -1,0 +1,10 @@
+@mixin border ($lineWeight: 1px, $color: red) {
+  box-shadow: 0 0 0 $lineWeight $color;
+}
+
+@mixin no-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

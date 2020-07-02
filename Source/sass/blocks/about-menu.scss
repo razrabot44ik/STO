@@ -1,0 +1,12 @@
+.about-menu {
+  @include no-list;
+}
+
+.about-menu__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $main-font;
+  color: $main-text;
+  letter-spacing: 0.05em;
+}

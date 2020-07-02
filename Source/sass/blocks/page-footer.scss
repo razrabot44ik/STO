@@ -1,0 +1,131 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.page-footer__about-menu {
+  display: none;
+}
+
+.page-footer__text {
+  order: 1;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.page-footer__social-list {
+  order: 2;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.page-footer__phone {
+  order: 3;
+
+  text-align: center;
+
+  .page-footer__number {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $main-font;
+    color: $main-text;
+    font-style: normal;
+    letter-spacing: 0.05em;
+  }
+
+  .page-footer__text {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.5;
+    font-family: $main-font;
+    color: $main-text;
+    font-style: normal;
+    letter-spacing: 0.045em;
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__copy {
+  order: 4;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $main-font;
+  color: $main-text;
+  font-style: normal;
+  letter-spacing: 0.005em;
+}
+
+.page-footer__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $main-font;
+  color: $main-text;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: $tablet) {
+  .page-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .page-footer__about-menu {
+    display: block;
+  }
+
+  .page-footer__text {
+    margin-bottom: 10px;
+  }
+
+  .page-footer__phone {
+    text-align: left;
+  }
+
+  .page-footer__number {
+    margin-bottom: 10px;
+  }
+
+  .page-footer__about-item {
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .page-footer__wrapper--phone {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    width: 1140px;
+    justify-content: flex-start;
+  }
+
+  .page-footer__wrapper {
+    margin-left: 150px;
+  }
+
+  .page-footer__wrapper--phone {
+    margin-left: auto;
+  }
+}

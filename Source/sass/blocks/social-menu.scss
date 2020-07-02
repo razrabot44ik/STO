@@ -1,0 +1,35 @@
+.social-menu {
+  @include no-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-menu__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $main-text;
+  position: relative;
+
+  .social-menu__icon {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--ok {
+    
+  }
+
+  &--yt {
+    
+  }
+
+  &--inst {
+    
+  }
+}
