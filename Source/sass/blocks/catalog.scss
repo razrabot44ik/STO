@@ -10,6 +10,7 @@
   color: #0d3351;
   font-style: normal;
   letter-spacing: 0.055em;
+  margin-bottom: 5px;
 }
 
 .catalog__sorting {
@@ -66,90 +67,90 @@
   display: none;
 }
 
-/*.catalog__item-label {
+// .catalog__item-label {
 
-  $label-color-blue: #34c7fd;
-  $label-color-red: #F10341;;
+//   $label-color-blue: #34c7fd;
+//   $label-color-red: #F10341;;
 
-  position: absolute;
-  top: -5px;
-  right: 10px;
+//   position: absolute;
+//   top: -5px;
+//   right: 10px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 89px;
-  height: 83px;
-  padding: 10px;
-  z-index: 2;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   box-sizing: border-box;
+//   width: 89px;
+//   height: 83px;
+//   padding: 10px;
+//   z-index: 2;
 
-  background-color: $label-color-blue;
+//   background-color: $label-color-blue;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 8px;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     bottom: -25px;
+//     left: 8px;
 
-    display: block;
-    box-sizing: border-box;
-    width: 30px;
-    height: 30px;
+//     display: block;
+//     box-sizing: border-box;
+//     width: 30px;
+//     height: 30px;
 
-    border: 15px solid $label-color-blue;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    transform: scaleX(1.5) scaleY(0.7);
-  }
+//     border: 15px solid $label-color-blue;
+//     border-right-color: transparent;
+//     border-bottom-color: transparent;
+//     transform: scaleX(1.5) scaleY(0.7);
+//   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    right: 7px;
-    bottom: -25px;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     right: 7px;
+//     bottom: -25px;
 
-    display: block;
-    box-sizing: border-box;
-    width: 30px;
-    height: 30px;
+//     display: block;
+//     box-sizing: border-box;
+//     width: 30px;
+//     height: 30px;
 
-    border: 15px solid $label-color-blue;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    transform: scaleX(1.5) scaleY(0.7);
-  }
+//     border: 15px solid $label-color-blue;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//     transform: scaleX(1.5) scaleY(0.7);
+//   }
 
-  &--discount {
-    background-color: $label-color-red;
-    &::before {
-      border: 15px solid $label-color-red;
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-    }
+//   &--discount {
+//     background-color: $label-color-red;
+//     &::before {
+//       border: 15px solid $label-color-red;
+//       border-right-color: transparent;
+//       border-bottom-color: transparent;
+//     }
 
-    &::after {
-      border: 15px solid $label-color-red;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    }
-  }
+//     &::after {
+//       border: 15px solid $label-color-red;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//     }
+//   }
 
-  &--stock {
-    background-color: $label-color-red;
-    &::before {
-      border: 15px solid $label-color-red;
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-    }
+//   &--stock {
+//     background-color: $label-color-red;
+//     &::before {
+//       border: 15px solid $label-color-red;
+//       border-right-color: transparent;
+//       border-bottom-color: transparent;
+//     }
 
-    &::after {
-      border: 15px solid $label-color-red;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    }
-  }
-}*/
+//     &::after {
+//       border: 15px solid $label-color-red;
+//     border-bottom-color: transparent;
+//     border-left-color: transparent;
+//     }
+//   }
+// }
 
 .catalog__item-label-text {
   margin: 0;
@@ -276,12 +277,12 @@ color: rgba(13, 51, 81, 0.54);
   text-align: left;
 }*/
 
-.catalog__btn-arrow {
-  position: absolute;
-  right: 20px;
-  top: 45%;
-  fill: #ffffff;
-}
+// .catalog__btn-arrow {
+//   position: absolute;
+//   right: 20px;
+//   top: 45%;
+//   fill: #ffffff;
+// }
 
 @media (min-width: $tablet) {
   .catalog__title {
@@ -334,7 +335,7 @@ color: rgba(13, 51, 81, 0.54);
     display: grid;
     grid-gap: 18px 30px;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     grid-template-areas: 
       "hit stock"

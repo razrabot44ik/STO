@@ -25,7 +25,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
+ 
 
   <link rel="preload" href="fonts/ralewayregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-slab-v11-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous">
@@ -37,29 +37,41 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__open-btn" href="#" aria-label="Открыть меню">
+  
+     <a class="page-header__open-btn" href="#" aria-label="Открыть меню">
       <svg width="22" height="16">
         <use xlink:href="images/sprite.svg#menu-btn"></use>
       </svg>
-    </a>
-    <nav class="page-header__nav hide">
+    </a> 
+
+
+    <div>
+      <form action="search.php" target="_blank" class="form-search2">
+        <input type="hidden" name="searchid" value="808327">
+        <input  type="search" name="text"  placeholder="Поиск по сайту" spellcheck="true">
+        <input type="submit" value="&#128269;">
+      </form>
+    </div>
+
+
+  <nav class="page-header__nav hide">   
+    
       <div class="page-header__container">
-
-        <a class="page-header__close-btn" href="#" aria-label="Закрыть меню">
-          <svg width="22" height="22">
-            <use xlink:href="images/sprite.svg#menu-close-btn"></use>
-          </svg>
-        </a>
-
-        <p class="page-header__title">Меню</p>
-
-        <ul class="page-header__user-menu">
+        <div>
+        <form action="search.php" target="_blank" class="form-search">
+          <input type="hidden" name="searchid" value="808327">
+          <input  type="search" name="text"  placeholder="Поиск по сайту" spellcheck="true">
+          <input type="submit" value="&#128269;">
+        </form>
+      </div>
+         <ul class="page-header__user-menu">
+      
           <li class="page-header__user-item">
             <a class="page-header__user-link page-header__user-link--user" href="#">
               <svg class="page-header__user-icon page-header__user-icon--user" width="10" height="12">
                 <use xlink:href="images/sprite.svg#user"></use>
               </svg>
-              <span>АДРЕС</span>
+              <span>КОРЗИНА</span>
               <svg class="page-header__user-icon page-header__user-icon--arrow" width="9" height="6">
                 <use xlink:href="images/sprite.svg#down"></use>
               </svg>
@@ -70,27 +82,38 @@
               <svg class="page-header__user-icon page-header__user-icon--rubl" width="11" height="12">
                 <use xlink:href="images/sprite.svg#rubl"></use>
               </svg>
-              <span>ЧТО-ТО</span>
+              <span>АДРЕС</span>
               <svg class="page-header__user-icon page-header__user-icon--arrow" width="9" height="6">
                 <use xlink:href="images/sprite.svg#down"></use>
               </svg>
             </a>
           </li>
-          <li class="page-header__user-item">
+          <!-- <li class="page-header__user-item">
             <a class="page-header__user-link page-header__user-link--lang" href="#"
-              aria-label="Язык сайта"><span>да</span>
+              aria-label="Язык сайта"><span>Курск</span>
               <svg class="page-header__user-icon page-header__user-icon--arrow" width="9" height="6">
                 <use xlink:href="images/sprite.svg#down"></use>
               </svg>
             </a>
-          </li>
+          </li> -->
         </ul>
 
-        <a class="page-header__open-btn page-header__open-btn--about" href="#" aria-label="Открыть меню">
-          <svg width="22" height="16">
-            <use xlink:href="images/sprite.svg#menu-btn"></use>
+
+        <a class="page-header__close-btn" href="#" aria-label="Закрыть меню">
+          <svg width="22" height="22">
+            <use xlink:href="images/sprite.svg#menu-close-btn"></use>
           </svg>
         </a>
+
+        <p class="page-header__title">Меню</p>
+
+        
+        <a class="page-header__open-btn page-header__open-btn--about" href="#" aria-label="Открыть меню">
+          <svg width="22" height="16"> 
+            <use xlink:href="images/sprite.svg#menu-btn"></use> 
+          </svg> 
+        </a>
+
         <div class="page-header__about-menu-wrapper hide">
           <a class="page-header__close-btn page-header__close-btn--about" href="#" aria-label="Закрыть меню">
             <svg width="22" height="22">
@@ -138,12 +161,13 @@
         </ul>
       </div>
     </nav>
+    
   </header>
   <main class="content">
     <h1 class="visually-hidden">Сайт компании "АРДУИНО"</h1>
     <section class="heading">
-      <div class="heading__bg">
-        <div class="heading__wrapper">
+      <!-- <div class="heading__bg"> -->
+         <div class="heading__wrapper"> 
           <h2 class="section-title heading__title">
             <span><!--Сайт магазина--></span>
             <span><!--АРДУИНО--></span>
@@ -152,9 +176,11 @@
           <!--<a class="heading__btn btn" href="#">Выбрать плата</a>-->
         </div>
       </div>
+     
     </section>
     <section class="catalog">
       <div class="container">
+   
         <h2 class="section-title catalog__title">Каталог</h2>
 
         <div class="catalog__sorting">

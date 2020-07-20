@@ -31,14 +31,16 @@
 }
 
 .page-header__close-btn--about {
-  display: none;
+   display: none;
 }
 
 .page-header__nav {
 
   background-color: $main;
-  position: fixed;
-  width: calc(100% - 170px);
+  //position: fixed;
+  position: relative;
+  //width: 20px;
+   width: calc(100% - 170px);
   padding: 0 85px;
   padding-top: 63px;
   padding-bottom: 39px;
@@ -79,7 +81,7 @@
 
 .page-header__user-link {
   position: relative;
-
+  left: 26px;
   display: block;
   box-sizing: border-box;
   padding: 0 15px;
@@ -146,7 +148,7 @@ margin-bottom: 25px;
   .page-header__nav {
     background-color: transparent;
     padding-top: 35px;
-    padding-right: 30px;
+    padding-right: 0px;
     box-sizing: border-box;
     width: 720px;
     display: block;

@@ -5,6 +5,8 @@ const openAboutMenuBtn = document.querySelector(`.page-header__open-btn--about`)
 const aboutMenu = document.querySelector(`.page-header__about-menu-wrapper`);
 const closeAboutMenuBtn = menu.querySelector(`.page-header__close-btn--about`);
 
+
+
 const onCloseMenuBtnClick = function (evt) {
   evt.preventDefault();
   if (!menu.classList.contains(`hide`)) {
